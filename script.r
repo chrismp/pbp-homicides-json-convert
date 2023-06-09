@@ -2,12 +2,14 @@ library(gsheet)
 library(jsonlite)
 
 
-gsheeturl <- 'https://docs.google.com/spreadsheets/d/1AKlUnrm6CXb1Tf7xN2KGu1B6BB0OISqbeq88xFdgbos/edit#gid=996990613'
+# gsheeturl <- 'https://docs.google.com/spreadsheets/d/1AKlUnrm6CXb1Tf7xN2KGu1B6BB0OISqbeq88xFdgbos/edit#gid=996990613'
+# 
+# df <- gsheet2tbl(
+#   url = gsheeturl,
+#   sheetid = 'homicides'
+# )
 
-df <- gsheet2tbl(
-  url = gsheeturl,
-  sheetid = 'homicides'
-)
+df <- read.csv('download-pbp-homicides/pbp-homicides.csv')
 
 data <- list(
   homicides = list()

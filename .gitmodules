@@ -1,0 +1,3 @@
+[submodule "download-pbp-homicides"]
+	path = download-pbp-homicides
+	url = https://github.com/chrismp/download-pbp-homicides.git
